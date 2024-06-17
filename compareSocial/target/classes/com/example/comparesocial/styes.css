@@ -1,0 +1,28 @@
+/* Define styles for TableView */
+.table-view {
+    -fx-background-color: #f0f0f0;
+}
+
+/* Define styles for BarChart */
+.bar-chart {
+    -fx-background-color: #ffffff;
+}
+
+/* Define styles for PieChart */
+.pie-chart {
+    -fx-background-color: #ffffff;
+}
+
+/* Define styles for ToggleButtons in ToolBar */
+.tool-bar .toggle-button {
+    -fx-padding: 8px 16px;
+    -fx-font-size: 14px;
+    -fx-background-color: #f0f0f0;
+    -fx-background-radius: 0;
+}
+
+/* Define styles for selected ToggleButton */
+.tool-bar .toggle-button:selected {
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.comparesocial.MainController">
+    <center>
+        <TableView fx:id="tableView" prefHeight="200.0">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID" prefWidth="50"/>
+                <TableColumn fx:id="platformColumn" text="Platform" prefWidth="100"/>
+                <TableColumn fx:id="dateColumn" text="Date" prefWidth="100"/>
+                <TableColumn fx:id="engagementCountColumn" text="Engagement Count" prefWidth="150"/>
+            </columns>
+        </TableView>
+    </center>
+
+    <bottom>
+        <HBox spacing="10">
+            <BarChart fx:id="barChart" prefWidth="400.0" prefHeight="200.0">
+                <xAxis>
+                    <CategoryAxis fx:id="xAxis"/>
+                </xAxis>
+                <yAxis>
+                    <NumberAxis/>
+                </yAxis>
+            </BarChart>
+
+            <PieChart fx:id="pieChart" prefWidth="400.0" prefHeight="200.0"/>
+        </HBox>
+    </bottom>
+</BorderPane>
